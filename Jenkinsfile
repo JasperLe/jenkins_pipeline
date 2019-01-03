@@ -5,7 +5,7 @@ node{
     dir('BuildQuality'){
         stage('Preparation'){
                         
-            git 'https://github.com/devopsevd/JasperLe.git'
+            git 'https://github.com/JasperLe/simple-spring'
             mvnHome = tool 'Maven'
         }
 
@@ -61,7 +61,7 @@ node{
     dir('FunctionalTests'){
 
         stage('Get Functional Test Scripts'){                        
-            git 'https://github.com/devopsevd/JasperLe.git'
+            git 'https://github.com/JasperLe/jenkins-selenium-int-testing.git'
             mvnHome = tool 'Maven'
         }
 
